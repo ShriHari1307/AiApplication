@@ -1,13 +1,16 @@
-
 import './App.css'
+import MainContent from './MainContent'
 
 function App() {
 
   return (
     <>
-      <div className='bg-black font-bold text-white'>
-        hi
-      </div>
+    {/* Header */}
+
+    {/* Main Content */}
+    <MainContent/>
+    
+    {/* Footer */}
     </>
   )
 }
