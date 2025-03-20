@@ -1,17 +1,20 @@
 import './App.css'
-import MainContent from './MainContent'
 import Header from './Components/Header'
+import { HeroSection } from './Components/HeroSection/HereSection'
+import { ClientSection } from './Components/ClientSection/ClientSection'
+import { CodeSampleSection } from './Components/SampleCodeSection/CodeSampleSection'
 
 function App() {
 
   return (
     <>
-    {/* Header */}
+    <Header/>
 
-    {/* Main Content */}
-    <MainContent/>
+    {/* MAIN */}
+    <HeroSection/>
+    <ClientSection/>
+    <CodeSampleSection/>
     
-    {/* Footer */}
     </>
   )
 }
