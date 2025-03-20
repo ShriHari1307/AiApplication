@@ -1,6 +1,6 @@
 export function Left(){
     return(
-    <div className="text-white col-span-6 px-10 py-4">
+    <div className="text-white col-span-12 lg:col-span-6 px-10 py-4">
         {/* Introduction */}
         <div className="flex pt-6 pb-3">
             <div className="bg-purple-400/30 text-purple-300 px-3 py-1.5 flex gap-5 text-sm rounded-full cursor-pointer">

@@ -10,7 +10,7 @@ export function Left({ onSelectCode }: LeftProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null); // Ensure state updates
 
   return (
-    <div className="text-white col-span-5 border-r border-[#292C32] w-full px-4 py-4 h-full">
+    <div className="text-white col-span-12 lg:col-span-5 border-r border-[#292C32] lg:w-full px-4 py-4 h-full">
       <div className="space-y-2">
         {CodeData.map((data, index) => (
           <div
