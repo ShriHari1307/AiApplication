@@ -1,15 +1,13 @@
 import './App.css'
 import MainContent from './MainContent'
-import Header from './Components/Header'
-import PricingLayout from './Components/Pricing/PricingLayout'
+import HeaderComponent from './Components/Header'
 
 function App() {
 
   return (
     <>
     {/* Header */}
-    <Header/>
-
+    <HeaderComponent/>
     {/* Main Content */}
     <MainContent/>
 
