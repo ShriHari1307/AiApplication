@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CodeData } from "./data";
-import { CodeDetailCard } from "./Left/CodeDetailCard";
+import { CodeDetailCard } from "./CodeDetailCard";
 
 interface LeftProps {
   onSelectCode: (code: string) => void;
