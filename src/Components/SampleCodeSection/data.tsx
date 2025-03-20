@@ -1,23 +1,24 @@
 export const CodeData=[
-    {
-      "title": "Simple Agent Workflow",
-      "desc": "Create a basic AI agent workflow with multiple agents.",
-      "code": ""
-    },
-    {
-      "title": "Multi-Agent Collaboration",
-      "desc": "Set up multiple AI agents to work together on a complex task.",
-      "code": ""
-    },
-    {
-      "title": "Tool Integration",
-      "desc": "Integrate external tools and APIs into an AI agent workflow.",
-      "code": ""
-    },
-    {
-      "title": "Customizable Agent Behavior",
-      "desc": "Design a specialized AI agent with custom decision-making logic.",
-      "code": ""
-    }
-  ]
+  {
+    "title": "Simple Agent Workflow",
+    "desc": "Create a basic AI agent workflow with multiple agents.",
+    "code": "import { Swarm, Agent } from 'ai-agent-sdk';\n\nconst client = new Swarm();\n\nconst transferToAgentB = (): Agent => {\n    return agentB;\n};\n\nconst agentA = new Agent({\n    name: \"Agent A\",\n    instructions: \"You are a helpful agent.\",\n    functions: [transferToAgentB],\n});\n\nconst agentB = new Agent({\n    name: \"Agent B\", \n    instructions: \"Only speak in Haikus.\",\n});\n\nconst run = async () => {\n    const response = await client.run({\n        agent: agentA,\n        messages: [{ role: \"user\", content: \"I want to talk to agent B.\" }],\n    });\n    console.log('Response:', response);\n};\n\nrun();"
+  },
+  {
+    "title": "Multi-Agent Collaboration",
+    "desc": "Set up multiple AI agents to work together on a complex task.",
+    "code": "import { Agent, MultiAgentSystem } from 'ai-agent-sdk';\n\nconst researchAgent = new Agent('Researcher');\nconst analysisAgent = new Agent('Analyst');\nconst reportAgent = new Agent('Reporter');\n\nconst system = new MultiAgentSystem('MarketResearch');\n\nsystem.addAgent(researchAgent, {\n  task: 'collectData',\n  output: 'rawData'\n});\n\nsystem.addAgent(analysisAgent, {\n  task: 'analyzeData',\n  input: 'rawData',\n  output: 'analysisResults'\n});\n\nsystem.addAgent(reportAgent, {\n  task: 'generateReport',\n  input: 'analysisResults',\n  output: 'finalReport'\n});\n\nconst runResearch = async () => {\n  const finalReport = await system.run();\n  console.log('Research completed:', finalReport);\n};\n\nrunResearch();"
+  },
+  {
+    "title": "Tool Integration",
+    "desc": "Integrate external tools and APIs into an AI agent workflow.",
+    "code": "import { Agent, Tool } from 'ai-agent-sdk';\nimport { Configuration, OpenAIApi } from 'openai';\n\nconst agent = new Agent('ResearchAssistant');\n\nconst openaiTool = new Tool('OpenAI', {\n  action: async (prompt: string) => {\n    const configuration = new Configuration({\n      apiKey: process.env.OPENAI_API_KEY,\n    });\n    const openai = new OpenAIApi(configuration);\n    const response = await openai.createCompletion({\n      model: \"text-davinci-002\",\n      prompt,\n    });\n    return response.data.choices[0].text;\n  }\n});\n\nconst searchTool = new Tool('GoogleSearch', {\n  action: async (query: string) => {\n    const url = new URL('https://www.googleapis.com/customsearch/v1');\n    url.searchParams.append('key', process.env.GOOGLE_API_KEY);\n    url.searchParams.append('cx', process.env.GOOGLE_SEARCH_ENGINE_ID);\n    url.searchParams.append('q', query);\n\n    const response = await fetch(url);\n    const data = await response.json();\n    return data.items.slice(0, 5);\n  }\n});\n\nagent.addTool(openaiTool);\nagent.addTool(searchTool);\n\nconst performResearch = async (topic: string) => {\n  const researchResult = await agent.performResearch(topic);\n  console.log('Research results:', researchResult);\n};\n\nperformResearch('AI advancements in 2023');"
+  },
+  {
+    "title": "Customizable Agent Behavior",
+    "desc": "Design a specialized AI agent with custom decision-making logic.",
+    "code": "import { Agent, KnowledgeBase } from 'ai-agent-sdk';\n\nclass CustomerSupportAgent extends Agent {\n  private knowledgeBase: KnowledgeBase;\n\n  constructor(name: string) {\n    super(name);\n    this.knowledgeBase = new KnowledgeBase('support-docs.json');\n  }\n\n  async decideAction(input: string): Promise<string> {\n    if (this.isSimpleQuery(input)) {\n      return this.provideDirectAnswer(input);\n    } else if (this.needsEscalation(input)) {\n      return this.escalateToHuman(input);\n    } else {\n      return this.generateDetailedResponse(input);\n    }\n  }\n\n  private isSimpleQuery(input: string): boolean {\n    return input.split(' ').length < 5;\n  }\n\n  private needsEscalation(input: string): boolean {\n    return input.toLowerCase().includes('urgent') || input.toLowerCase().includes('complaint');\n  }\n\n  private async provideDirectAnswer(input: string): Promise<string> {\n    return this.knowledgeBase.getQuickAnswer(input);\n  }\n\n  private async escalateToHuman(input: string): Promise<string> {\n    return \"Your query has been escalated to our human support team. They will contact you shortly.\";\n  }\n\n  private async generateDetailedResponse(input: string): Promise<string> {\n    return this.generateResponse(input);\n  }\n}\n\nconst handleCustomerQuery = async (query: string) => {\n  const supportAgent = new CustomerSupportAgent('HelpDesk');\n  const response = await supportAgent.handleQuery(query);\n  console.log('Agent response:', response);\n};\n\nhandleCustomerQuery(\"How do I reset my password?\");"
+  }
+]
+
   

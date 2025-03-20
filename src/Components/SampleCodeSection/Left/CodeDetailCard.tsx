@@ -4,9 +4,9 @@ interface CodeData {
     code: string;
   }
   
-  interface CodeDetailCardProps {
-    data: CodeData;
-  }
+interface CodeDetailCardProps {
+  data: CodeData;
+}
   
   export function CodeDetailCard({ data }: CodeDetailCardProps) {
     return (
