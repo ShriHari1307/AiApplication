@@ -1,0 +1,20 @@
+export const ClientData=[
+    {
+    clientImage:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/2560px-Spotify_logo_with_text.svg.png'
+    },
+    {
+        clientImage:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png'
+        },
+    {
+        clientImage:'https://pngimg.com/d/microsoft_PNG17.png'
+    },
+    {
+        clientImage:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png'
+    },
+    {
+        clientImage:'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg'
+    },
+    {
+        clientImage:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo-Tinder.svg/2560px-Logo-Tinder.svg.png'
+    }
+];
