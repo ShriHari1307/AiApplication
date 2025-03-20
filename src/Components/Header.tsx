@@ -33,7 +33,7 @@ export default function Header() {
       <div className="sticky top-0 z-10 h-14 border-b border-gray-700 backdrop-filter backdrop-blur-lg">
         <div className="flex justify-between items-center max-w-screen-lg mx-auto p-2">
           <h3 className="text-white text-lg font-semibold mb-1">{">_ AI Agent SDK"}</h3>
-          <button formTarget="#" className="hidden lg:block mb-1 bg-purple-400 py-1 px-3 rounded-sm text-black">
+          <button formTarget="#" className="hidden lg:block mb-1 bg-[#a284da] py-1 px-3 rounded-sm text-black">
             Get Started
           </button>
           <button className="block lg:hidden mb-1" onClick={() => setIsDrawerOpen(true)}>
@@ -73,7 +73,7 @@ export default function Header() {
         </p>
 
         {/* Get Started Button */}
-        <button className="w-full bg-purple-500 py-2 rounded-lg text-white">
+        <button className="w-full bg-[#a284da] py-2 rounded-full text-white">
           Get Started
         </button>
       </div>
