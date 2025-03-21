@@ -12,14 +12,15 @@ export default function HeroSection() {
       <div className="pl-6 pr-6 max-w-screen-lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 border-b border-l border-r border-gray-800 p-13 ">
           <div className="flex flex-col justify-start ">
-            <a href="#" className="flex gap-3 items-center w-70 h-8 bg-white rounded-full">
+            <a href="#" className="flex gap-3 items-center w-70 h-8 bg-[#2e283e] rounded-full">
               <div className="ml-5 flex gap-2 text-sm">
-                <div className="flex items-center justify-center">
-                <img className="w-4 h-4" src={construction} alt="img" /></div>
-                <p>New</p>
+                <div className="flex gap-1  w-15 bg-[#36393f] rounded-full items-center justify-center">
+                <img className="w-4 h-4" src={construction} alt="img" />
+                <p className="text-[#b392f0]">New</p>
+                </div>
               </div>
               <div className="flex gap-2">
-                <p className="text-sm">Introducing AI Agent SDK </p>
+                <p className="text-sm text-[#b392f0] ">Introducing AI Agent SDK </p>
                 <div className="flex items-center justify-center">
                   <img className="w-4 h-4" src={arrow} alt="arrow" />
                 </div>
@@ -42,7 +43,7 @@ export default function HeroSection() {
             <p className="text-white text-sm">  Available for all major programming languages</p></div>
           </div>
           <div className="flex items-center justify-center hidden lg:flex">
-            <img src={hero} className="w-90 h-90" alt="hero img" />
+            <img src={hero} className="w-70 h-70" alt="hero img" />
           </div>
         </div>
       </div>
