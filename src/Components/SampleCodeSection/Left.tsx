@@ -10,13 +10,13 @@ export function Left({ onSelectCode }: LeftProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null); // Ensure state updates
 
   return (
-    <div className="text-white col-span-12 lg:col-span-5 border-r border-[#292C32] lg:w-full px-4 py-4 h-full">
+    <div className="text-white col-span-12 sm:col-span-5 sm:border-r border-[#292C32] px-4 py-4">
       <div className="space-y-2">
         {CodeData.map((data, index) => (
           <div
             key={index}
             onClick={() => {
-              setSelectedIndex(index); // Update selected index
+              setSelectedIndex(index);
               onSelectCode(data.code);
             }}
             className="cursor-pointer"
