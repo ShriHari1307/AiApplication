@@ -1,14 +1,15 @@
 interface FeatureItemProps {
     title: string;
-  }
+}
 
 
-export const PricingFeature : React.FC <FeatureItemProps> = ({ title }) => (
+export const PricingFeature: React.FC<FeatureItemProps> = ({ title }) => (
 
     <div>
-        <li className="flex px-3 space-x-2">
+        <ul><li className="flex space-x-2">
             <span className=" text-green-500 text-xl">✓</span>
             <span>{title}</span>
-        </li>
+        </li></ul>
+
     </div>
 )

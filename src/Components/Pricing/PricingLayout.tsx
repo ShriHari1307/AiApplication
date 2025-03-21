@@ -11,7 +11,7 @@ const PricingLayout = () => {
         {
             name: "Basic",
             yearlyPrice: "$99",
-            monthlyPrice:"$9",
+            monthlyPrice: "$9",
             description: "Perfect for individuals and small projects.",
             features: [
                 "100 AI generations per month",
@@ -23,7 +23,7 @@ const PricingLayout = () => {
         {
             name: "Pro",
             yearlyPrice: "$290",
-            monthlyPrice:"$29",
+            monthlyPrice: "$29",
             description: "Ideal for professionals and growing businesses.",
             features: [
                 "1000 AI generations per month",
@@ -37,7 +37,7 @@ const PricingLayout = () => {
         {
             name: "Enterprise",
             yearlyPrice: "Custom",
-            monthlyPrice:"$999",
+            monthlyPrice: "$999",
             description: "Tailored solutions for large organizations.",
             popular: true,
             features: [
@@ -53,18 +53,23 @@ const PricingLayout = () => {
 
 
     return (
-        <div className="flex flex-col items-center justify-center text-center text-white pt-6 w-full">
-            <h1 className="text-4xl md:text-4xl font-bold mb-4">Simple pricing for everyone.</h1>
-            <p className="text-md md:text-sm text-gray-400 max-w-md">
-                Choose an <span className="font-semibold text-white">affordable plan</span> that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.
-            </p>
-            <div className=' flex items-center py-5'>
-                <PricingToggle yearly={yearly} toggle = {toggle}/>
-            </div>
-            <div className="flex flex-row w-full">
-                {data.map((plan) => (
-                    <PricingCard key={plan.name} plan={plan} yearly={yearly} />
-                ))}
+        <div className='flex justify-center mx-auto max-w-screen-lg'>
+            <div className='px-6 md:px-4 sm:px-4 w-full'>
+                <div className="flex flex-col items-center justify-center text-center text-white pt-6 border border-gray-600">
+                    <h1 className="text-3xl lg:text-5xl md:text-5xl sm:text-4xl font-bold mb-4 md:w-md">Simple pricing for everyone.</h1>
+                    <p className="text-sm lg:text-lg md:w-xl md:text-md sm:text-lg text-gray-400">
+                        Choose an <span className="font-semibold text-white">affordable plan</span> that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.
+                    </p>
+                    <div className=' flex items-center pt-10'>
+                        <PricingToggle yearly={yearly} toggle={toggle} />
+                    </div>
+
+                    <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 w-full">
+                        {data.map((plan) => (
+                            <PricingCard key={plan.name} plan={plan} yearly={yearly} />
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     )
