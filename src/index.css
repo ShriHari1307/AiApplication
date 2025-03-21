@@ -12,11 +12,34 @@
     font-family: theme('fontFamily.sans');
   }
   body {
-    @apply bg-black;
+    @apply bg-[#0d0e12];
   }
 }
 
-:root {
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #f3f4f6; /* Light gray background */
+    border-radius: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db; /* Muted gray thumb */
+    border-radius: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af; /* Darker gray on hover */
+  }
+}
+
+
+
+
+/* :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
@@ -130,4 +153,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
