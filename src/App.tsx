@@ -1,15 +1,20 @@
 import './App.css'
 import MainContent from './MainContent'
 import HeaderComponent from './Components/Header'
-
+import PricingLayout from './Components/Pricing/PricingLayout'
 function App() {
 
   return (
     <>
-    {/* Header */}
-    <HeaderComponent/>
+
+
+    {/* Header
     {/* Main Content */}
-    <MainContent/>
+    <HeaderComponent/>
+    <MainContent/> 
+
+    {/* Pricing Section */}
+      <PricingLayout/>
     
     {/* Footer */}
     </>
