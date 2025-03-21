@@ -1,0 +1,17 @@
+pre.shiki {
+  background-color: black !important;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scroll-container::-webkit-scrollbar-corner{
+  background: transparent;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #292c32b3;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
