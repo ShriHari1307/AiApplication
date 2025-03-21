@@ -1,7 +1,9 @@
+import HeroSection from "./Components/HeroSection";
 
 export default function MainContent() {
   return (
-  <div className="">
-  </div>
+    <>
+    <HeroSection/>
+    </>
   )
 }

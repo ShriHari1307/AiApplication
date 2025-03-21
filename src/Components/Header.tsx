@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
-import menu from "../assets/Menu.png";
+
+import menu from "/Menu.png";
 
 export default function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function Header() {
         ></div>
       )}
 
-      //Bottom Drawer with Drag-to-Close 
+      {/*Bottom Drawer with Drag-to-Close*/} 
       <div
         ref={drawerRef}
         className={`fixed bottom-0 left-0 w-full bg-gray-900 text-white rounded-t-2xl p-6 shadow-lg z-50 transition-transform duration-300 ${
