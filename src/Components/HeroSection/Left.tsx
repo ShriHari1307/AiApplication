@@ -11,8 +11,8 @@ export function Left(){
 
         {/* Logo */}
         <div className="pt-4">
-            <h1 className="font-bold text-5xl py-2 bg-gradient-to-r from-red-500 via-5% to-green-500 bg-clip-text text-transparent">AI Agent SDK</h1>
-            <p className="font-normal opacity-70 text-[1.1rem]">Create powerful AI agent workflows with just a few lines of code, enabling complex task automation and decision-making processes.</p>
+            <h1 className="font-bold text-4xl lg:text-5xl py-2 bg-gradient-to-r from-red-500 via-5% to-green-500 bg-clip-text text-transparent">AI Agent SDK</h1>
+            <p className="font-normal opacity-70 text-[1rem] lg:text-[1.1rem]">Create powerful AI agent workflows with just a few lines of code, enabling complex task automation and decision-making processes.</p>
         </div>
 
         {/* Get Staetd */}

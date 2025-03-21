@@ -1,20 +1,38 @@
 export const ClientData=[
     {
-    clientImage:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/2560px-Spotify_logo_with_text.svg.png'
+    clientImage:'./clients/Microsoft.svg'
     },
     {
-        clientImage:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png'
-        },
-    {
-        clientImage:'https://pngimg.com/d/microsoft_PNG17.png'
+    clientImage:'./clients/Google.svg'
     },
     {
-        clientImage:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png'
+    clientImage:'./clients/Dropbox.svg'
     },
     {
-        clientImage:'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg'
+    clientImage:'./clients/Netflix.svg'
     },
     {
-        clientImage:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo-Tinder.svg/2560px-Logo-Tinder.svg.png'
+    clientImage:'./clients/Shopify.svg'
+    },
+    {
+    clientImage:'./clients/Slack.svg'
+    },
+    {
+    clientImage:'./clients/Spotify.svg'
+    },
+    {
+    clientImage:'./clients/Tinder.svg'
+    },
+    {
+    clientImage:'./clients/YouTube.svg'
+    },
+    {
+    clientImage:'./clients/Zoom.svg'
+    },
+    {
+    clientImage:'./clients/Amazon.svg'
+    },
+    {
+    clientImage:'./clients/Instagram.svg'
     }
 ];
