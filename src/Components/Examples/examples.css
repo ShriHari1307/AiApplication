@@ -15,3 +15,6 @@ pre.shiki {
 .scroll-container::-webkit-scrollbar-track {
   background-color: transparent; 
 }
+:root{
+  --header-height:3.5rem;
+}
