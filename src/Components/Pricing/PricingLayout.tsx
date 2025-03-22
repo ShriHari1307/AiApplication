@@ -53,8 +53,8 @@ const PricingLayout = () => {
 
 
     return (
-        <div className='flex justify-center mx-auto max-w-screen-lg'>
-            <div className='px-6 md:px-4 sm:px-4 w-full'>
+        <div className='container flex justify-center mx-auto px-4 pb-4'>
+            <div className='px-6 md:px-6 sm:px-6 max-w-screen-lg'>
                 <div className="flex flex-col items-center justify-center text-center text-white pt-6 border border-gray-600">
                     <h1 className="text-3xl lg:text-5xl md:text-5xl sm:text-4xl font-bold mb-4 md:w-md">Simple pricing for everyone.</h1>
                     <p className="text-sm lg:text-lg md:w-xl md:text-md sm:text-lg text-gray-400">
