@@ -15,7 +15,7 @@ interface PricingPlan {
 
 
 export const PricingCard: React.FC<PricingPlan> = ({ plan, yearly }) => (
-    <div className={`shadow-xl flex flex-col justify-between mt-2 md:mt-2 sm:mt-2  ${plan.popular ? "border border-gray-700 bg-gray-900" : "border border-gray-700"
+    <div className={`shadow-xl flex flex-col justify-between mt-2 md:mt-2 sm:mt-2  ${plan.popular ? "border border-[#292c32] bg-[#15141d]" : "border border-[#292c32]"
         }`}>
         <div className="p-4 md:p-4">
             <div className=" flex justify-between w-full items-center mb-2">
