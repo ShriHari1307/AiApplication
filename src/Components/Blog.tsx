@@ -29,7 +29,7 @@ const blogPosts = [
 
 function Blog() {
   return (
-    <section id="blog" className="relative flex justify-center mx-auto container p-4 text-white">
+    <section id="blog" className="relative flex justify-center mx-auto container px-4 pb-4 text-white">
       
       <div className="max-w-screen-lg pl-6 pr-6 ">
         {/* Title Section */}
