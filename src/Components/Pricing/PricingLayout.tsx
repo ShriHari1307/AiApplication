@@ -79,7 +79,7 @@ const PricingLayout = () => {
                         PRICING
                     </h2>
                 </div>
-                <div className="border border-[#292c32] flex flex-col items-center justify-center text-center  text-white pt-6">
+                <div className="border border-[#292c32] flex flex-col items-center justify-center text-center  text-white pt-6 border border-gray-600">
                     <h1 className="text-3xl lg:text-5xl md:text-5xl sm:text-4xl font-bold mb-4 md:w-md">Simple pricing for everyone.</h1>
                     <p className="text-sm lg:text-lg md:w-xl md:text-md sm:text-lg text-gray-400">
                         Choose an <span className="font-semibold text-white">affordable plan</span> that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.

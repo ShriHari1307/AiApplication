@@ -1,4 +1,5 @@
 import Blog from "./Components/Blog";
+import CTASection from "./Components/CTA";
 import HeaderComponent from './Components/Header'
 import PricingLayout from './Components/Pricing/PricingLayout'
 
@@ -8,6 +9,7 @@ export default function MainContent() {
     <HeaderComponent/>
     <PricingLayout/>
     <Blog/>
+    <CTASection />
   </div>
   )
 }
