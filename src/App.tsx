@@ -1,6 +1,7 @@
 import './App.css'
 import MainContent from './MainContent'
 import HeaderComponent from './Components/Header'
+import Card from './Components/Testimonials/Card'
 
 function App() {
 
@@ -10,6 +11,8 @@ function App() {
     <HeaderComponent/>
     {/* Main Content */}
     <MainContent/>
+
+    <Card/>
     
     {/* Footer */}
     </>
