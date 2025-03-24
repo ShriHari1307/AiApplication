@@ -4,28 +4,28 @@ type Props = {};
 
 const pairedLogos = [
   {
-    firstSrc: "https://cdn.magicui.design/companies/Google.svg",
-    secondSrc: "https://cdn.magicui.design/companies/Spotify.svg",
+    firstSrc: "Organisations/Google.svg",
+    secondSrc: "Organisations/Spotify.svg",
   },
   {
-    firstSrc: "https://cdn.magicui.design/companies/Microsoft.svg",
-    secondSrc: "https://cdn.magicui.design/companies/Dropbox.svg",
+    firstSrc: "Organisations/Microsoft.svg",
+    secondSrc: "Organisations/Dropbox.svg",
   },
   {
-    firstSrc: "https://cdn.magicui.design/companies/Amazon.svg",
-    secondSrc: "https://cdn.magicui.design/companies/Tinder.svg",
+    firstSrc: "Organisations/Amazon.svg",
+    secondSrc: "Organisations/Tinder.svg",
   },
   {
-    firstSrc: "https://cdn.magicui.design/companies/Netflix.svg",
-    secondSrc: "https://cdn.magicui.design/companies/Slack.svg",
+    firstSrc: "Organisations/Netflix.svg",
+    secondSrc: "Organisations/Slack.svg",
   },
   {
-    firstSrc: "https://cdn.magicui.design/companies/YouTube.svg",
-    secondSrc: "https://cdn.magicui.design/companies/Zoom.svg",
+    firstSrc: "Organisations/YouTube.svg",
+    secondSrc: "Organisations/Zoom.svg",
   },
   {
-    firstSrc: "https://cdn.magicui.design/companies/Instagram.svg",
-    secondSrc: "https://cdn.magicui.design/companies/Shopify.svg",
+    firstSrc: "Organisations/Instagram.svg",
+    secondSrc: "Organisations/Shopify.svg",
   },
 ];
 export default function Organisation({}: Props) {
@@ -57,13 +57,11 @@ export default function Organisation({}: Props) {
               {currentLogos.map((src, index) => (
                 <div
                   key={index}
-                  className="flex h-full border-r border-b border-[#292c32] border-t-0 last:border-r-0 items-center justify-center"
-                >
+                  className={`flex p-4 h-full border-r border-b border-[#292c32] border-t-0 last:border-r-0 items-center justify-center md:[&:nth-child(3n)]:border-r-0 ${(index+1)%2=== 0?"border-r-0":""}  lg:[&:nth-child(3n)]:border-r md:even:border-r`}>
                   <img
-                    src={src}
+                    src={src} loading="lazy"
                     alt="Company Logo"
-                    className="h-10 w-100 dark:brightness-0 dark:invert grayscale opacity-30 
-                        hover:grayscale-0 hover:opacity-100 transition-all duration-200 ease-out"
+                    className="h-10 w-100  brightness-100 opacity-50 transition-all duration-200 ease-in-out hover:invert hover:grayscale hover:opacity-100 hover:brightness-100"
                   />
                 </div>
               ))}

@@ -9,10 +9,9 @@ export default function Examples() {
     return (
        <section id="examples">
          <div className="items-center justify-between">
-          <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-5 relative w-full">
+         <div className="grid grid-cols-1 md:grid-cols-5 relative w-full">
             {/* Left sidebar with workflow options */}
-            <div className="md:col-span-2 bg-black sticky  border-b md:border-b top-14 md:border-r border-gray-700">
+            <div className="md:col-span-2 bg-black sticky  border-b md:border-b top-14 md:border-r border-[#292c32]">
                 <div className="flex md:flex-col  overflow-x-auto scroll-container p-4 pb-2">
                 {workflowOptions.map((workflow) => (
                   <WorkflowCard
@@ -27,10 +26,9 @@ export default function Examples() {
             </div>
 
             {/* Right side with code editor */}
-            <div className="col-span-1 md:col-span-3 border-b border-gray-700">
+            <div className="col-span-1 md:col-span-3 border-b border-[#292c32]">
               <CodeEditor code={selectedWorkflow.code} />
             </div>
-          </div>
           </div>
         </div>
        </section>
