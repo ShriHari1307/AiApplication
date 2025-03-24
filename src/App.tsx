@@ -1,18 +1,17 @@
 import './App.css'
 import MainContent from './MainContent'
-import HeaderComponent from './Components/Header'
-import Card from './Components/Testimonials/Card'
+// import HeaderComponent from './Components/Header'
+
 
 function App() {
 
   return (
     <>
     {/* Header */}
-    <HeaderComponent/>
+    {/* <HeaderComponent/> */}
+    
     {/* Main Content */}
     <MainContent/>
-
-    <Card/>
     
     {/* Footer */}
     </>
