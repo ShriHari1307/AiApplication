@@ -3,6 +3,10 @@ import Header from './Components/Header'
 import { HeroSection } from './Components/HeroSection/HereSection'
 import { ClientSection } from './Components/ClientSection/ClientSection'
 import { CodeSampleSection } from './Components/SampleCodeSection/CodeSampleSection'
+import { Features } from './Components/Features/Features'
+import { Statistics } from './Components/Statistics/Statistics'
+import { Testimonials } from './Components/Testimonials/Testimonials'
+import { Pricin } from './Components/Pricing/Pricing'
 
 function App() {
 
@@ -14,6 +18,10 @@ function App() {
     <HeroSection/>
     <ClientSection/>
     <CodeSampleSection/>
+    <Features/>
+    <Statistics/>
+    <Testimonials/>
+    <Pricin/>
     
     </>
   )
