@@ -8,6 +8,7 @@ function App() {
     <>
     {/* Header */}
     <HeaderComponent/>
+
     {/* Main Content */}
     <MainContent/>
     

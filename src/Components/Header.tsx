@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
-import menu from "../assets/Menu.png";
+
+import menu from "/Menu.png";
 
 export default function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function Header() {
   return (
     <>
       {/* Navbar */}
-      <div className="sticky top-0 z-10 h-14 border-b border-gray-700 backdrop-filter backdrop-blur-lg">
+      <div className="sticky top-0 z-10 h-14 border-b border-[#292c32] backdrop-filter backdrop-blur-lg">
         <div className="flex justify-between items-center max-w-screen-lg mx-auto p-2">
           <h3 className="text-white text-lg font-semibold mb-1">{">_ AI Agent SDK"}</h3>
           <button formTarget="#" className="hidden lg:block mb-1 bg-[#a284da] py-1 px-3 rounded-sm text-black">
