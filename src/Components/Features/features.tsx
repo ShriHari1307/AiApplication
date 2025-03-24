@@ -17,12 +17,10 @@ interface FeatureCardProps {
 
   const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
     return (
-      <div className="flex flex-col items-center text-center p-8">
-        <img className="bg-purple-400 bg-opacity-30 p-3 rounded-lg mb-4  w-[50px] h-[50px] object-contain" src={icon} alt={title} width={50} height={50} />
-        
-
-        <h3 className="text-xl font-semibold text-white mb-3">{title}</h3>
-        <p className="text-gray-400">{description}</p>
+      <div className="flex flex-col gap-y-2 items-center text-center p-6">
+        <img className="bg-purple-400 bg-opacity-30 p-3 rounded-lg  w-[50px] h-[50px] object-contain" src={icon} alt={title} width={50} height={50} />
+        <h3 className="text-xl text-balance font-semibold text-white">{title}</h3>
+        <p className="text-gray-400 text-balance text-sm mx-auto max-w-md text-center">{description}</p>
         <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
           Learn more &gt;
         </a>
@@ -67,13 +65,12 @@ interface FeatureCardProps {
 
 
   return (
-    <div className="text-white align-middle">
-        
-        <div className="border border-gray-800 mx-[1rem] ">
+    <div className="text-white px-[1.5rem] mx-auto xl:px-[17rem]">
+        <div className="border-x border-t border-gray-800">
           {/* Full-width Flickering Grid with Centered Heading */}
-            <div className="relative w-full flex justify-center">
+            <div className="relative w-full flex justify-center overflow-hidden">
               {/* Flickering Grid Positioned Across Full Width */}
-                        <div className="absolute inset-0 w-full h-full z-[-1]">
+                        <div className="absolute inset-0 w-full h-full z-[-1] ">
                           <FlickeringGrid 
                             className="w-full h-full"
                             squareSize={4}
@@ -84,8 +81,8 @@ interface FeatureCardProps {
                           />
                         </div>
 
-                {/* Centered Container for the Heading */}
-                      <div className="container mx-auto sm:px-8 md:px-16 lg:px-24 py-12 border-gray-800 text-center">
+                {/* Heading */}
+                      <div className="container mx-auto sm:px-8 md:px-16 lg:px-24 py-12 border-gray-800 text-center overflow-hidden">
                         
                         <h2 className="text-gray-400 font-semibold relative z-10">
                           FEATURES
@@ -96,9 +93,9 @@ interface FeatureCardProps {
             </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-gray-800 lg:mx-[1rem] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center border-t border-l border-gray-800">
             {features.map((feature, index) => (
-            <div key={index} className="border-r border-b border-gray-800  hover:bg-gray-950 flex flex-col items-center">
+            <div key={index} className="flex flex-col gap-y-2 border-r border-b border-gray-800  hover:bg-gray-950 items-center">
                 <FeatureCard icon={feature.icon} title={feature.title} description={feature.description} />
             </div>
             ))}
@@ -108,48 +105,6 @@ interface FeatureCardProps {
   );
 };
 
-
-
-// {/* Flickering Grid Background */}
-{/* <div className="absolute inset-0 z-0">
-<FlickeringGrid
-  className="size-full"
-  squareSize={4}
-  gridGap={6}
-  color="#6B7280"
-  maxOpacity={0.5}
-  flickerChance={0.1}
-/>
-{/* Fade effect at the bottom */}
-{/* <div className="absolute bottom-0 left-0 w-full h-90 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
-</div> */} 
-
-{/*<div className="border border-gray-800 mx-[1rem] ">
-          Full-width Flickering Grid with Centered Heading 
-          <div className="relative w-full ">
-          {/* Flickering Grid Positioned Across Full Width 
-                    <div className="absolute inset-0 w-full h-full z-[-1]">
-                      <FlickeringGrid 
-                        className="w-full h-full"
-                        squareSize={4}
-                        gridGap={6}
-                        color="#6B7280"
-                        maxOpacity={0.5}
-                        flickerChance={0.1}
-                      />
-                    </div>
-
-            {/* Centered Container for the Heading 
-                  <div className="container mx-auto sm:px-8 md:px-16 lg:px-24 py-12 border-gray-800 text-center">
-                    
-                    <h2 className="text-gray-400 font-semibold relative z-10">
-                      FEATURES
-                    </h2>
-                  <div className="absolute bottom-0 left-0 w-full h-90 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
-
-                </div>
-        </div>
-    </div>*/}
 
 
 
