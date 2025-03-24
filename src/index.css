@@ -43,3 +43,41 @@
     transform: scale(1) translateY(0);
   }
 }
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+
+
+@layer base {
+  html {
+    font-family: theme('fontFamily.sans');
+  }
+  body {
+    @apply bg-[#0d0e12];
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #f3f4f6; /* Light gray background */
+    border-radius: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db; /* Muted gray thumb */
+    border-radius: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af; /* Darker gray on hover */
+  }
+}
+
+

@@ -6,7 +6,7 @@ import { CodeSampleSection } from './Components/SampleCodeSection/CodeSampleSect
 import { Features } from './Components/Features/Features'
 import { Statistics } from './Components/Statistics/Statistics'
 import { Testimonials } from './Components/Testimonials/Testimonials'
-import { Pricin } from './Components/Pricing/Pricing'
+import Pricing from './Components/Pricing/Pricing'
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
     <Features/>
     <Statistics/>
     <Testimonials/>
-    <Pricin/>
+    <Pricing/>
     
     </>
   )
