@@ -36,7 +36,7 @@ export const PricingCard: React.FC<PricingPlan> = ({ plan, yearly }) => (
                 <p className="text-sm md:text-sm text-gray-300 mt-2 mb-4 max-w-sm text-left">{plan.description}</p>
             </div>
         </div>
-        <div className="border-b w-full"></div>
+        <div className="border-b border-[#292c32] w-full"></div>
         <ul className="space-y-2 h-full pl-4 pt-2">
             {plan.features.map((feature, idx) => (
                 <PricingFeature key={idx} title={feature} />

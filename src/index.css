@@ -19,7 +19,8 @@
 @layer utilities {
   .scrollbar::-webkit-scrollbar {
     width: 8px;
-  }
+}
+
 
   .scrollbar::-webkit-scrollbar-track {
     background: #f3f4f6; /* Light gray background */

@@ -33,7 +33,7 @@ function Blog() {
       
       <div className="max-w-screen-lg pl-6 pr-6 ">
         {/* Title Section */}
-      <div className="text-center relative mx-auto border  border-[#292c32] overflow-hidden p-4 py-8 md:p-12">
+      <div className="text-center relative mx-auto border  border-[#292c32]  overflow-hidden p-4 py-8 md:p-12">
         
         {/* Flickering Grid Background */}
         <div className="absolute inset-0 z-0">
