@@ -7,8 +7,9 @@ import { workflowOptions } from "./Examples/lib/data";
 export default function Examples() {
     const [selectedWorkflow, setSelectedWorkflow] = useState(workflowOptions[0]);
     return (
-        <div className="xl:px-[20%] px-[1.5rem] items-center justify-between">
-          <div className="border-x border-gray-700">
+       <section id="examples">
+         <div className="items-center justify-between">
+          <div className="">
           <div className="grid grid-cols-1 md:grid-cols-5 relative w-full">
             {/* Left sidebar with workflow options */}
             <div className="md:col-span-2 bg-black sticky  border-b md:border-b top-14 md:border-r border-gray-700">
@@ -32,5 +33,6 @@ export default function Examples() {
           </div>
           </div>
         </div>
+       </section>
     )
   }
