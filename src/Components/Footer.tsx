@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6"; // Import X (Twitter) icon
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center gap-y-5 rounded-lg px-7 text-white py-5 container">
+    <footer className="flex flex-col mx-auto justify-center gap-y-5 rounded-lg px-7 text-white pt-5 container">
       {/* Logo & Social Icons */}
       <div className="flex items-center justify-between px-6 sm:px-12 md:px-16 lg:px-28 xl:px-32">
         <div className="flex items-center gap-x-2">
