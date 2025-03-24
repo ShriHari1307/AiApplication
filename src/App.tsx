@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     {/* Header */}
-    {/*<Header/>*/}
+    <Header/>
     {/* Main Content */}
     <MainContent/>
     
