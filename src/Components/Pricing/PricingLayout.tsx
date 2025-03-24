@@ -84,7 +84,7 @@ const PricingLayout = () => {
                     <p className="text-sm lg:text-lg md:w-xl md:text-md sm:text-lg text-gray-400">
                         Choose an <span className="font-semibold text-white">affordable plan</span> that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.
                     </p>
-                    <div className=' flex items-center pt-10'>
+                    <div className=' flex items-center pt-10 '>
                         <PricingToggle yearly={yearly} toggle={toggle} />
                     </div>
 
