@@ -1,13 +1,13 @@
+import Examples from "./Components/Examples";
 import HeroSection from "./Components/HeroSection";
 import Organisation from "./Components/Organisation";
 
 export default function MainContent() {
   return (
-    <>
-      <div className="border-x border-[#292c32] xl:mx-[16rem] mx-[1.5rem]">
-        <HeroSection/>
-        <Organisation/>
-      </div>  
-    </>
+  <div className="xl:mx-[16rem] mx-[1.5rem] border-x border-[#292c32]">
+    <HeroSection />
+    <Organisation />
+    <Examples/>
+  </div>
   )
 }
