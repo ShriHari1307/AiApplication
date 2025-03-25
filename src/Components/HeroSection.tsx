@@ -8,8 +8,8 @@ type Props = {};
 export default function HeroSection() {
   return (
     <section id="heroSection">
-      <div className="flex justify-center border-b border-[#292c32]">
-      <div className="max-w-screen-lg">
+      <div className="flex justify-center  px-[1rem] max-w-screen-lg mx-auto">
+      <div className="max-w-screen-lg border-b border-[#292c32] border-x">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 p-6 lg:p-12 ">
           <div className="flex flex-col justify-start items-start lg:col-span-1">
             <a href="#" className="flex w-auto items-center space-x-2 rounded-full bg-[#2e283e] px-2 py-1 ring-1 ring-accent whitespace-pre" style={{opacity:"1",willChange:"auto"}}>

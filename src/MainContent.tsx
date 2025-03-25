@@ -4,10 +4,10 @@ import Organisation from "./Components/Organisation";
 
 export default function MainContent() {
   return (
-  <div className="xl:mx-[16rem] mx-[1rem] border-x border-[#292c32]">
+  <>
     <HeroSection />
     <Organisation />
     <Examples/>
-  </div>
+  </>
   )
 }

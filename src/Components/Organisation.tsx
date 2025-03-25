@@ -50,18 +50,18 @@ export default function Organisation({}: Props) {
 
   return (
     <section id="organisation">
-      <div className="flex justify-center w-full ">
-        <div className="max-w-screen-lg">
+      <div className="flex justify-center w-full px-[1rem] max-w-screen-lg mx-auto ">
+        <div className="max-w-screen-lg border-[#292c32] border-l">
           <div className="h-full">
             <div className="grid h-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 ">
               {currentLogos.map((src, index) => (
                 <div
                   key={index}
-                  className={`flex p-4 h-full border-r border-b border-[#292c32] border-t-0 last:border-r-0 items-center justify-center md:[&:nth-child(3n)]:border-r-0 ${(index+1)%2=== 0?"border-r-0":""}  lg:[&:nth-child(3n)]:border-r md:even:border-r`}>
+                  className="flex p-4 h-full border-r border-b border-[#292c32] items-center justify-center">
                   <img
                     src={src} loading="lazy"
                     alt="Company Logo"
-                    className="h-10 w-100  brightness-100 opacity-50 transition-all duration-200 ease-in-out hover:invert hover:grayscale hover:opacity-100 hover:brightness-100"
+                    className="h-10 w-100 grayscale brightness-60 contrast-25 opacity-50 hover:invert hover:opacity-100 duration-200 ease-out transition-all"
                   />
                 </div>
               ))}
