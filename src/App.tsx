@@ -9,6 +9,8 @@ import { Testimonials } from './Components/Testimonials/Testimonials'
 import Pricing from './Components/Pricing/Pricing'
 import Blog from './Components/Blog/Blog'
 import { Community } from './Components/Community/Community'
+import { Getstart } from './Components/GetStart/Getstart'
+import { Footer } from './Components/Footer/Footer'
 
 function App() {
 
@@ -22,9 +24,10 @@ function App() {
     <Statistics/>
     <Testimonials/>
     <Pricing/>
-    <Blog/>
     <Community/>
-   
+    <Blog/>
+    <Getstart/>
+    <Footer/>
     </>
   )
 }

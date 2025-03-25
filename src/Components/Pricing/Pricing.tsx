@@ -70,8 +70,8 @@ const Pricing = () => {
 
       {/* PRICING HERO SECTION */}
       <div className="border-[#292C32] border-x-1 space-y-6 pt-6">
-        <div className="px-60 flex flex-col items-center space-y-2 text-white">
-          <h1 className="font-bold text-[2.7rem]">Simple pricing for everyone.</h1>
+        <div className="px-10 sm:px-20 lg:px-40 xl:px-50 flex flex-col items-center space-y-2 text-white">
+          <h1 className="font-bold text-[2.7rem] text-center">Simple pricing for everyone.</h1>
           <p className="text-center opacity-70">Choose an affordable plan that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
         </div>
 

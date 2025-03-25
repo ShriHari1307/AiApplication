@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar } from "./Subcomponents/Avatar";
 import { FlickeringGrid } from "../magicui/flickering-grid";
+import { Ripple } from "../magicui/ripple";
 
 const avatarData: string[] = [
   "https://randomuser.me/api/portraits/women/1.jpg",
@@ -12,38 +13,39 @@ const avatarData: string[] = [
 
 export const Community: React.FC = () => {
   return (
-    <div className="flex items-center justify-between h-full px-8 lg:px-20 xl:px-30 2xl:px-40">
+    <div className="flex items-center justify-between h-full px-8 lg:px-20 xl:px-30 2xl:px-40 relative">
       <div className="w-full">
         {/* Header */}
         <div className="w-full h-24 flex justify-center items-center relative border-[#292C32] border-b-1 border-x-1">
-                <div className='absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black'></div>
-                <FlickeringGrid
-                  className="absolute inset-0 z-0"
-                  squareSize={4}
-                  gridGap={6}
-                  color="#6B7280"
-                  maxOpacity={0.5}
-                  flickerChance={0.1}
-                />
-                <div className="text-white font-medium opacity-70 z-10">
-                  COMMUNITY
-                </div>
-              </div>
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black"></div>
+          <FlickeringGrid
+            className="absolute inset-0 z-0"
+            squareSize={4}
+            gridGap={6}
+            color="#6B7280"
+            maxOpacity={0.5}
+            flickerChance={0.1}
+          />
+          <div className="text-white font-medium opacity-70 z-10">COMMUNITY</div>
+        </div>
 
         {/* Body */}
-        <div className="px-[21rem] py-16 border-[#292C32] border-x-1  font-medium text-sm text-white flex flex-col items-center space-y-8">
-          <h1 className="text-center opacity-75">
+        <div className="relative h-full flex flex-col items-center space-y-8 px-8 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-8 border-[#292C32] border-b-1 border-x-1 font-medium text-sm text-white">
+          {/* Ripple Background */}
+          <Ripple className="absolute inset-0 z-0" color="#6B7280" mainCircleOpacity={0.2} />
+          
+          <h1 className="text-center opacity-75 z-10 text-[1rem]">
             We're grateful for the amazing open-source community that helps make our project better every day.
           </h1>
 
           {/* Avatar Group */}
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center z-10">
             {avatarData.map((src, index) => (
               <Avatar key={index} src={src} index={index} />
             ))}
           </div>
 
-          <button className="bg-[#323539] px-5 py-3 rounded-md">
+          <button className="bg-[#323539] hover:bg-[#676e75] hover:text-black cursor-pointer px-5 py-3 rounded-md z-10">
             Become a contributor
           </button>
         </div>

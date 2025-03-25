@@ -1,6 +1,6 @@
 export function TestimonialCard(){
     return(
-        <div className="text-white px-9 py-6 space-y-3 border-[#292C32] border-r-1 border-b-1 hover:bg-white/5 cursor-pointer">
+        <div className="text-white px-6 py-5 space-y-3 border-[#292C32] border-r-1 border-b-1 hover:bg-white/5 cursor-pointer">
 
             {/* USER */}
             <div className="flex items-center gap-3">
@@ -10,6 +10,7 @@ export function TestimonialCard(){
                      <p className="text-[0.9rem] opacity-75">OpenMind Labs</p>
                 </div>
             </div>
+            
             {/* COMMENT */}
             <div className="">
             The AI Agent SDK has revolutionized how we build intelligent systems. It's incredibly intuitive and powerful.
