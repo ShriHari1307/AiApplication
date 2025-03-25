@@ -8,14 +8,13 @@ import { Statistics } from './Components/Statistics/Statistics'
 import { Testimonials } from './Components/Testimonials/Testimonials'
 import Pricing from './Components/Pricing/Pricing'
 import Blog from './Components/Blog/Blog'
+import { Community } from './Components/Community/Community'
 
 function App() {
 
   return (
     <>
     <Header/>
-
-    {/* MAIN */}
     <HeroSection/>
     <ClientSection/>
     <CodeSampleSection/>
@@ -24,7 +23,8 @@ function App() {
     <Testimonials/>
     <Pricing/>
     <Blog/>
-    
+    <Community/>
+   
     </>
   )
 }
