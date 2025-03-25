@@ -1,20 +1,20 @@
 interface cardProps {
-    props : {
-        name : string
-        company : string
-        testimonial : string
+    props: {
+        name: string
+        company: string
+        testimonial: string
     }
 }
 
 
-export const Card : React.FC<cardProps> = ({props}) => {
+export const Card: React.FC<cardProps> = ({ props }) => {
 
 
 
     return (
         <div className="flex justify-start items-center">
             <div className=" flex flex-col border-x border-t overflow-hidden border-gray-600 p-4 h-full">
-                <div className=" flex justify-start">
+                <div className=" flex justify-start ">
                     <img className=" rounded-full w-12 h-12" src="https://github.com/shadcn.png" alt="avatar" />
                     <div className=" flex flex-col pl-6">
                         <h1>{props.name}</h1>

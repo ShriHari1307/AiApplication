@@ -87,10 +87,6 @@ const TestimonialsLayout = () => {
         }
     ]
 
-
-
-
-
     return (
         <div className='flex justify-center mx-auto container px-4 text-white'>
             <div className='px-6 md:px-6 sm:px-6 w-full max-w-screen-lg'>
@@ -99,13 +95,13 @@ const TestimonialsLayout = () => {
                         <FlickeringGrid
                             className="size-full"
                             squareSize={4}
-                            gridGap={6}
+                            gridGap={5}
                             color="#6B7280"
                             maxOpacity={0.5}
                             flickerChance={0.1}
                         />
                         {/* Fade effect at the bottom */}
-
+                        <div className="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-t from-[#0d0e12] via-transparent to-transparent pointer-events-none" />
                     </div>
                     <h2 className="relative z-10 text-sm text-white text-muted-foreground font-semibold 
                     tracking-tight uppercase">
@@ -114,24 +110,23 @@ const TestimonialsLayout = () => {
                 </div>
                 <div className="relative">
                     <div className="columns-1 sm:columns-2 lg:columns-3 gap-0 pb-5 bg-grid-1 sm:bg-grid-2 
-                    lg:bg-grid-3">
+                    lg:bg-grid-3 border-x border-gray-600">
                         {data.slice(0, showAll ? data.length : initialCardCount).map((plan) => (
                             <Card key={plan.name} props={plan} />
                         ))}
                     </div>
 
                     {/* Fade effect that covers bottom cards when not showing all */}
-                    {!showAll && data.length > initialCardCount && (
+                    {/* {!showAll && data.length > initialCardCount && (
                         <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t 
                         from-[#0d0e12]  to-transparent pointer-events-none" />
-                    )}
+                    )} */}
                 </div>
-
-                <div className={`
-                    ${showAll ? "absolute -bottom-90 left-0 w-full  h-64 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none" : 
-                        "absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none"}
-                    `}/>
-                <div className="flex justify-center cursor-pointer items-center h-10 pb-10">
+                {/* <div className={`
+                    ${showAll ? "absolute lg:-bottom-130 lg:w-245 md:-bottom-50 h-64 bg-gradient-to-t from-[white] to-transparent pointer-events-none" :
+                        "absolute -bottom-90 lg:-bottom-40 lg:w-245 md:-bottom-50  h-64 bg-gradient-to-t from-[white] to-transparent pointer-events-none"}
+                    `} /> */}
+                <div className="flex justify-center cursor-pointer items-center h-10 pb-10 border-x border-gray-600">
                     <button
                         type="button"
                         className="border border-gray-600 cursor-pointer 
