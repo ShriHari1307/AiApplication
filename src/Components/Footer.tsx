@@ -4,10 +4,11 @@ import { FaXTwitter } from "react-icons/fa6"; // Import X (Twitter) icon
 const Footer = () => {
   return (
     <footer className="flex flex-col mx-auto justify-center gap-y-5 rounded-lg px-7 text-white pt-5 container">
-      {/* Logo & Social Icons */}
-      <div className="flex items-center justify-between px-6 sm:px-12 md:px-16 lg:px-28 xl:px-32">
+      <div>
+        {/* Logo & Social Icons */}
+      <div className="flex justify-between sm:px-6 md:px-4 lg:px-2 xl:px-29">
         <div className="flex items-center gap-x-2">
-          <svg
+        <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18" // Reduced from 24 to 18
             height="18" // Reduced from 24 to 18
@@ -31,7 +32,7 @@ const Footer = () => {
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#ABAFBA] hover:text-[#F8FAFC] transition-colors duration-300"
+            className="flex text-[#ABAFBA] hover:text-[#F8FAFC] transition-colors duration-300"
           >
             <FaGithub className="h-5 w-5" /> {/* Reduced icon size */}
           </a>
@@ -41,7 +42,7 @@ const Footer = () => {
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#ABAFBA] hover:text-[#F8FAFC] transition-colors duration-300"
+            className="flex text-[#ABAFBA] hover:text-[#F8FAFC] transition-colors duration-300"
           >
             <FaXTwitter className="h-5 w-5" /> {/* Reduced icon size */}
           </a>
@@ -49,7 +50,7 @@ const Footer = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-y-5 sm:px-12 md:px-16 lg:px-28 xl:px-32">
+      <div className="flex flex-col md:flex-row md:items-center justify-between sm:px-6 md:px-4 lg:px-2 xl:px-29">
         <ul className="flex flex-col text-[#ABAFBA]  md:flex-row gap-x-5 gap-y-2 text-muted-foreground">
           <li className="text hover:text-[#F8FAFC] font-medium hover:text-foreground hover:underline">
             <a href="#">Pricing</a>
@@ -75,6 +76,8 @@ const Footer = () => {
   </h1>
 </div>
 
+      </div>
+      
     </footer>
   );
 };
