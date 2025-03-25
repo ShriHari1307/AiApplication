@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="flex flex-col mx-auto justify-center gap-y-5 rounded-lg px-7 text-white pt-5 container">
       <div>
         {/* Logo & Social Icons */}
-      <div className="flex justify-between sm:px-6 md:px-4 lg:px-2 xl:px-29">
+      <div className="flex justify-between sm:px-7 md:px-5 lg:px-6 xl:px-29 px-6">
         <div className="flex items-center gap-x-2">
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,10 +48,10 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
+      
       {/* Navigation Links */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between sm:px-6 md:px-4 lg:px-2 xl:px-29">
-        <ul className="flex flex-col text-[#ABAFBA]  md:flex-row gap-x-5 gap-y-2 text-muted-foreground">
+      <div className="flex flex-col md:flex-row md:items-center justify-between px-6 sm:px-7 md:px-5 lg:px-6 xl:px-29">
+        <ul className="flex flex-col text-[#ABAFBA] py-3 md:flex-row gap-x-5 text-muted-foreground">
           <li className="text hover:text-[#F8FAFC] font-medium hover:text-foreground hover:underline">
             <a href="#">Pricing</a>
           </li>
@@ -59,7 +59,7 @@ const Footer = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <div className="text-[#ABAFBA] text-sm font-medium text-muted-foreground">
+        <div className="text-[#ABAFBA] gap-y-2 text-sm font-medium text-muted-foreground">
           <p>All rights reserved.</p>
         </div>
       </div>
