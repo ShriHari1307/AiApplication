@@ -1,7 +1,7 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import {
+import { cn } from "../../lib/utils";
+import  {
   useCallback,
   useEffect,
   useMemo,

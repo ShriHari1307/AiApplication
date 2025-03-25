@@ -8,10 +8,11 @@ function App() {
   return (
     <>
     {/* Header */}
-    {/* <HeaderComponent/> */}
-    
+    <HeaderComponent/>
+
     {/* Main Content */}
     <MainContent/>
+    
     
     {/* Footer */}
     </>
