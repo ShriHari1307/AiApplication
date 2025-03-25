@@ -23,7 +23,6 @@ export default function MainContent() {
     <Blog/>
     <CTASection />
     <Footer />
-  </div>
   </>
   )
 }
