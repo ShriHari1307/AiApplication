@@ -1,10 +1,10 @@
 
-import bolt from "/bolt.png";
-import code from "/code.png";
-import web from "/language.png";
-import power from "/power.png";
-import brain from "/neurology.png";
-import group from "/group.png";
+import bolt from "/features/bolt.png";
+import code from "/features/code.png";
+import web from "/features/language.png";
+import power from "/features/power.png";
+import brain from "/features/neurology.png";
+import group from "/features/group.png";
 import { FlickeringGrid } from "../magicui/flickering-grid";
 
 
@@ -18,7 +18,7 @@ interface FeatureCardProps {
   const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
     return (
       <div className="flex flex-col gap-y-2 items-center text-center p-6">
-        <img className="bg-purple-400 bg-opacity-30 p-3 rounded-lg  w-[50px] h-[50px] object-contain" src={icon} alt={title} width={50} height={50} />
+        <img className="bg-purple-400 bg-opacity-30 p-3 rounded-lg  w-[45px] h-[45px] object-contain" src={icon} alt={title}  />
         <h3 className="text-xl text-balance font-semibold text-white">{title}</h3>
         <p className="text-gray-400 text-balance text-sm mx-auto max-w-md text-center">{description}</p>
         <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
@@ -65,8 +65,9 @@ interface FeatureCardProps {
 
 
   return (
-    <div className="text-white px-[1.5rem] mx-auto xl:px-[17rem]">
-        <div className="border-x border-t border-gray-800">
+    <section id="features">
+    <div className="text-white px-[1rem] mx-auto xl:px-[17rem]">
+        <div className="border-x border-t border-[#292c32]">
           {/* Full-width Flickering Grid with Centered Heading */}
             <div className="relative w-full flex justify-center overflow-hidden">
               {/* Flickering Grid Positioned Across Full Width */}
@@ -82,7 +83,7 @@ interface FeatureCardProps {
                         </div>
 
                 {/* Heading */}
-                      <div className="container mx-auto sm:px-8 md:px-16 lg:px-24 py-12 border-gray-800 text-center overflow-hidden">
+                      <div className="container mx-auto sm:px-8 md:px-16 lg:px-24 py-12 border-[#292c32] text-center overflow-hidden">
                         
                         <h2 className="text-gray-400 font-semibold relative z-10">
                           FEATURES
@@ -93,15 +94,15 @@ interface FeatureCardProps {
             </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center border-t border-l border-gray-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center border-t border-l border-[#292c32]">
             {features.map((feature, index) => (
-            <div key={index} className="flex flex-col gap-y-2 border-r border-b border-gray-800  hover:bg-gray-950 items-center">
+            <div key={index} className="flex flex-col  border-r border-b border-[#292c32]  hover:bg-gray-950 items-center">
                 <FeatureCard icon={feature.icon} title={feature.title} description={feature.description} />
             </div>
             ))}
         </div>
     </div> 
-
+    </section>
   );
 };
 
