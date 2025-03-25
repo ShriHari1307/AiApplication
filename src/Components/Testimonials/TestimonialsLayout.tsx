@@ -122,10 +122,9 @@ const TestimonialsLayout = () => {
                         from-[#0d0e12]  to-transparent pointer-events-none" />
                     )} */}
                 </div>
-
                 {/* <div className={`
-                    ${showAll ? "absolute -bottom-140 left-0 w-full h-64 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none" :
-                        "absolute -bottom-50 left-0 w-full h-64 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none"}
+                    ${showAll ? "absolute lg:-bottom-130 lg:w-245 md:-bottom-50 h-64 bg-gradient-to-t from-[white] to-transparent pointer-events-none" :
+                        "absolute -bottom-90 lg:-bottom-40 lg:w-245 md:-bottom-50  h-64 bg-gradient-to-t from-[white] to-transparent pointer-events-none"}
                     `} /> */}
                 <div className="flex justify-center cursor-pointer items-center h-10 pb-10 border-x border-gray-600">
                     <button
