@@ -11,7 +11,7 @@ export default function Examples() {
          <div className="items-center justify-between lg:px-2 max-w-screen-lg mx-auto">
          <div className="grid grid-cols-1 md:grid-cols-5 border-[#292c32] border-x md:pl-1 border-b md:overflow-hidden">
             {/* Left sidebar with workflow options */}
-            <div className="md:col-span-2 bg-black md:border-b-0 sticky border-b top-14 md:border-r border-[#292c32] ">
+            <div className="md:col-span-2 bg-[#0d0e12] md:border-b-0 sticky border-b top-14 md:border-r border-[#292c32] ">
                 <div className="flex md:flex-col  overflow-x-auto scroll-container p-4 pb-2">
                 {workflowOptions.map((workflow) => (
                   <WorkflowCard
