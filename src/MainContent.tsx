@@ -11,7 +11,7 @@ import TestimonialsLayout from "./Components/Testimonials/TestimonialsLayout";
 
 export default function MainContent() {
   return (
-  <>
+  <div className="px-6">
     <HeroSection />
     <Organisation />
     <Examples/>
@@ -22,6 +22,6 @@ export default function MainContent() {
     <Blog/>
     <CTASection />
     <Footer />
-  </>
+  </div>
   )
 }
