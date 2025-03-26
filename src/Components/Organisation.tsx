@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-type Props = {};
+
 
 const pairedLogos = [
   {
@@ -28,7 +28,7 @@ const pairedLogos = [
     secondSrc: "Organisations/Shopify.svg",
   },
 ];
-export default function Organisation({}: Props) {
+export default function Organisation() {
   const [currentLogos, setCurrentLogos] = useState(
     pairedLogos.map((pair) => pair.firstSrc)
   );
@@ -49,8 +49,8 @@ export default function Organisation({}: Props) {
   }, []);
 
   return (
-    <section id="organisation">
-      <div className="flex justify-center w-full px-[1rem] max-w-screen-lg mx-auto ">
+    <section id="organisation" className=" flex justify-center mx-auto container">
+      <div className="flex justify-center w-full lg:px-2 max-w-screen-lg mx-auto ">
         <div className="max-w-screen-lg border-[#292c32] border-l">
           <div className="h-full">
             <div className="grid h-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 ">

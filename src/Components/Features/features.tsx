@@ -17,7 +17,7 @@ interface FeatureCardProps {
 
   const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
     return (
-      <div className="flex flex-col gap-y-2 items-center text-center p-6">
+      <div className="flex flex-col gap-y-2 items-center text-center">
         <img className="bg-purple-400 bg-opacity-30 p-3 rounded-lg  w-[45px] h-[45px] object-contain" src={icon} alt={title}  />
         <h3 className="text-xl text-balance font-semibold text-white">{title}</h3>
         <p className="text-gray-400 text-balance text-sm mx-auto max-w-md text-center">{description}</p>
@@ -65,8 +65,8 @@ interface FeatureCardProps {
 
 
   return (
-    <section id="features">
-    <div className="text-white px-[1rem] max-w-screen-lg mx-auto">
+    <section id="features" className=" flex justify-center mx-auto container">
+    <div className="text-white lg:px-2 max-w-screen-lg mx-auto">
         <div className="border-x  border-[#292c32]">
           {/* Full-width Flickering Grid with Centered Heading */}
             <div className="relative w-full flex justify-center overflow-hidden">
