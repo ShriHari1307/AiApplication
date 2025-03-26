@@ -29,7 +29,7 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full">
+    <div>
       {/* Navbar */}
       <div className="sticky top-0 z-10 h-14 border-b border-[#292c32] backdrop-filter backdrop-blur-lg">
         <div className="flex justify-between items-center max-w-screen-lg mx-auto p-2">
