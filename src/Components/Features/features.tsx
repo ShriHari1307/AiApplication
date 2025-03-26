@@ -17,7 +17,7 @@ interface FeatureCardProps {
 
   const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
     return (
-      <div className="flex flex-col gap-y-2 items-center text-center p-6">
+      <div className="flex flex-col gap-y-2 items-center text-center">
         <img className="bg-purple-400 bg-opacity-30 p-3 rounded-lg  w-[45px] h-[45px] object-contain" src={icon} alt={title}  />
         <h3 className="text-xl text-balance font-semibold text-white">{title}</h3>
         <p className="text-gray-400 text-balance text-sm mx-auto max-w-md text-center">{description}</p>
@@ -65,8 +65,8 @@ interface FeatureCardProps {
 
 
   return (
-    <section id="features">
-    <div className="text-white px-[1rem] max-w-screen-lg mx-auto">
+    <section id="features" className=" flex justify-center mx-auto container">
+    <div className="text-white lg:px-2 max-w-screen-lg mx-auto">
         <div className="border-x  border-[#292c32]">
           {/* Full-width Flickering Grid with Centered Heading */}
             <div className="relative w-full flex justify-center overflow-hidden">
@@ -85,7 +85,7 @@ interface FeatureCardProps {
                 {/* Heading */}
                       <div className="container mx-auto sm:px-8 md:px-16 lg:px-24 py-12 border-[#292c32]  text-center overflow-hidden">
                         
-                        <h2 className="text-gray-400 font-semibold relative z-10">
+                        <h2 className="font-semibold relative z-10">
                           FEATURES
                         </h2>
                       <div className="absolute bottom-0 left-0 w-full h-90 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
@@ -96,7 +96,7 @@ interface FeatureCardProps {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center border-t border-l border-[#292c32]">
             {features.map((feature, index) => (
-            <div key={index} className="flex flex-col  border-r border-b border-[#292c32]  hover:bg-gray-950 items-center">
+            <div key={index} className="flex flex-col  border-r border-b border-[#292c32] px-4 py-8 hover:bg-gray-950 items-center">
                 <FeatureCard icon={feature.icon} title={feature.title} description={feature.description} />
             </div>
             ))}

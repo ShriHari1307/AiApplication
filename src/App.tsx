@@ -6,7 +6,7 @@ import HeaderComponent from './Components/Header'
 function App() {
 
   return (
-    <>
+    <div className=''>
     {/* Header */}
     <HeaderComponent/>
 
@@ -15,7 +15,7 @@ function App() {
     
     
     {/* Footer */}
-    </>
+    </div>
   )
 }
 

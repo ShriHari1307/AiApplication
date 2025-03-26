@@ -3,12 +3,11 @@ import { AuroraText } from "./Ui";
 import hero from "/HeroImg.png";
 import arrow from "/arrow.png"
 
-type Props = {};
 
 export default function HeroSection() {
   return (
-    <section id="heroSection">
-      <div className="flex justify-center  px-[1rem] max-w-screen-lg mx-auto">
+    <section id="heroSection" className="flex justify-center mx-auto container">
+      <div className="flex justify-center lg:px-2 max-w-screen-lg">
       <div className="max-w-screen-lg border-b border-[#292c32] border-x">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 p-6 lg:p-12 ">
           <div className="flex flex-col justify-start items-start lg:col-span-1">

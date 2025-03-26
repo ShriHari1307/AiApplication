@@ -29,9 +29,9 @@ const blogPosts = [
 
 function Blog() {
   return (
-    <section id="blog" className="relative flex justify-center mx-auto container px-4  text-white">
+    <section id="blog" className="relative flex justify-center mx-auto container text-white">
       
-      <div className="max-w-screen-lg pl-6 pr-6 ">
+      <div className="max-w-screen-lg lg:px-2">
         {/* Title Section */}
       <div className="text-center relative mx-auto border  border-[#292c32]  overflow-hidden p-4 py-8 md:p-12">
         

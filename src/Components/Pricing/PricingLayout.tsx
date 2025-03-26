@@ -54,10 +54,9 @@ const PricingLayout = () => {
 
 
     return (
-        <div className='flex justify-center  mx-auto container px-4'>
+        <div className='flex justify-center mx-auto'>
             {/* Flickering Grid Background */}
-
-            <div className='px-6 md:px-6 sm:px-6 w-full max-w-screen-lg'>
+            <div className='lg:px-2 w-full max-w-screen-lg'>
                 <div className="text-center relative mx-auto border border-[#292c32] overflow-hidden p-4 py-8 md:p-12">
 
                     {/* Flickering Grid Background */}
