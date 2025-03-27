@@ -5,6 +5,7 @@ import Features from "./Components/Features/features";
 import Blog from "./Components/Blog";
 import PricingLayout from './Components/Pricing/PricingLayout'
 import TestimonialsLayout from "./Components/Testimonials/TestimonialsLayout";
+import { UseCase } from "./Components/UseCase/UseCase";
 
 export default function MainContent() {
   return (
@@ -12,6 +13,7 @@ export default function MainContent() {
     <HeroSection />
     <Organisation />
     <Examples/>
+    <UseCase/>
     <Features/>
     <TestimonialsLayout/>
     <PricingLayout/>
