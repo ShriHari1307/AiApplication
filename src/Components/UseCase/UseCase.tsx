@@ -31,10 +31,10 @@ export function UseCase() {
   ];
 
   return (
-    <div className='flex justify-center mx-auto container px-4'>
+    <div className='flex justify-center mx-auto container'>
     {/* Flickering Grid Background */}
 
-    <div className='px-6  md:px-6 sm:px-6 w-full max-w-screen-lg'>
+    <div className='lg:px-2 w-full max-w-screen-lg'>
       {/* Header */}
       {/* <div className="bg-black border-1 border-zinc-700 h-[20vh] flex items-center justify-center text-white ">
         <h1 className="opacity-70 font-sans text-lg">USE CASES</h1>
