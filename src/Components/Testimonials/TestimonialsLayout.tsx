@@ -108,24 +108,34 @@ const TestimonialsLayout = () => {
                         TESTIMONIALS
                     </h2>
                 </div>
+                {/* <div className="relative">
+                    <div className="columns-1 sm:columns-2 lg:columns-3 gap-0 pb-5 bg-grid-1 sm:bg-grid-2 
+                    lg:bg-grid-3 border-x-1 border-gray-700">
+                        {data.slice(0, showAll ? data.length : initialCardCount).map((plan) => (
+                            <Card key={plan.name} props={plan} />
+                        ))}
+                    </div>
+                </div>
+                <div className={`
+                    ${showAll ? "absolute lg:-bottom-550 lg:w-250 md:-bottom-50 h-80 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none" :
+                        "absolute -bottom-90 lg:-bottom-470 lg:w-250 md:-bottom-50  h-80 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none"}
+                    `} /> */}
+
                 <div className="relative">
                     <div className="columns-1 sm:columns-2 lg:columns-3 gap-0 pb-5 bg-grid-1 sm:bg-grid-2 
-                    lg:bg-grid-3 border-x border-gray-600">
+                        lg:bg-grid-3 border-x-1 border-gray-700">
                         {data.slice(0, showAll ? data.length : initialCardCount).map((plan) => (
                             <Card key={plan.name} props={plan} />
                         ))}
                     </div>
 
-                    {/* Fade effect that covers bottom cards when not showing all */}
-                    {/* {!showAll && data.length > initialCardCount && (
-                        <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t 
-                        from-[#0d0e12]  to-transparent pointer-events-none" />
-                    )} */}
+                    {/* Always stays at the bottom regardless of card count */}
+                    {!showAll ? (
+                        <div className="absolute bottom-0 left-2 right-2 h-64 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none z-10 rounded-xl" />
+                    ) : (
+                        <div className="absolute bottom-0 left-2 right-2 h-64 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none z-10 rounded-xl" />  
+                    )}
                 </div>
-                {/* <div className={`
-                    ${showAll ? "absolute lg:-bottom-130 lg:w-245 md:-bottom-50 h-64 bg-gradient-to-t from-[white] to-transparent pointer-events-none" :
-                        "absolute -bottom-90 lg:-bottom-40 lg:w-245 md:-bottom-50  h-64 bg-gradient-to-t from-[white] to-transparent pointer-events-none"}
-                    `} /> */}
                 <div className="flex justify-center cursor-pointer items-center h-10 pb-10 border-x border-gray-600">
                     <button
                         type="button"

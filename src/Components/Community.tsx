@@ -4,8 +4,8 @@ import { AvatarCircles } from "./magicui/avatar-circles";
 
 export default function Community() {
   return (
-    <section id="community" className="relative flex justify-center mx-auto container px-4 pb-0 text-white h-auto">
-    <div className="max-w-screen-lg w-full px-6">
+    <section id="community" className="relative flex justify-center mx-auto container pb-0 text-white h-auto">
+    <div className="max-w-screen-lg w-full lg:px-2">
       {/* Title Section */}
       <div className="text-center relative mx-auto border border-[#292c32] overflow-hidden p-2 py-4 md:p-12">
         <div className="absolute inset-0 z-0">
