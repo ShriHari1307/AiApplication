@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {};
 
@@ -14,7 +14,6 @@ export default function Organisation({}: Props) {
     const [currentLogos, setCurrentLogos] = useState(pairedLogos.map((pair) => pair.firstSrc));
     
     useEffect(() => {
-        console.log(currentLogos)
       const interval = setInterval(() => {
         setCurrentLogos((prevLogos) =>
           prevLogos.map((logo, index) =>
