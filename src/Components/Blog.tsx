@@ -10,7 +10,7 @@ const blogPosts = [
     description: "Introducing Acme.ai, a cutting-edge AI solution for modern businesses."
   },
   {
-    title: "Why Dev AI?",
+    title: "Why Dev AI I?",
     date: "November 1, 2024",
     timeAgo: "2w ago",
     image: "/Blog.webp",
