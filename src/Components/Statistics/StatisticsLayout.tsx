@@ -1,5 +1,7 @@
 import { FlickeringGrid } from '../magicui/flickering-grid'
 import StatisticsCard from './StatisticsCard'
+import { FaGithub, FaDiscord } from "react-icons/fa";
+import { PiDownloadSimpleBold } from "react-icons/pi";
 
 const StatisticsLayout = () => {
 
@@ -7,17 +9,17 @@ const StatisticsLayout = () => {
         {
             population: "10K+",
             platform: "Stars on GitHub",
-            logo: "https://img.icons8.com/ios-glyphs/30/1A1A1A/github.png"
+            logo: <FaGithub  className='w-5 h-5 mt-0.5 ml-1 text-[#f8fafc]'/>
         },
         {
             population: "50K+",
             platform: "Discord Members",
-            logo: "https://img.icons8.com/ios-glyphs/30/1A1A1A/discord-logo.png"
+            logo: <FaDiscord className='w-5 h-5 mt-0.5 ml-1 text-[#f8fafc]'/>
         },
         {
             population: "1M+",
             platform: "Downloads",
-            logo: ""
+            logo: <PiDownloadSimpleBold className='w-5 h-5 mt-0.5 ml-1 text-[#f8fafc]'/>
         }
     ]
 

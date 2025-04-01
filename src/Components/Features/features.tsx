@@ -71,7 +71,7 @@ interface FeatureCardProps {
           {/* Full-width Flickering Grid with Centered Heading */}
             <div className="relative w-full flex justify-center overflow-hidden">
               {/* Flickering Grid Positioned Across Full Width */}
-                        <div className="absolute inset-0 w-full h-full z-[-1] ">
+                        <div className="absolute inset-0 z-[0] ">
                           <FlickeringGrid 
                             className="w-full h-full"
                             squareSize={4}
@@ -88,7 +88,7 @@ interface FeatureCardProps {
                         <h2 className="font-semibold relative z-10">
                           FEATURES
                         </h2>
-                      <div className="absolute bottom-0 left-0 w-full h-90 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
 
                     </div>
             </div>
