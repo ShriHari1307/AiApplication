@@ -27,7 +27,7 @@ const IntegrationSkeletonCard = () => {
 
   return (
     <div 
-      className="w-70 h-[30vh] relative   border border-gray-800  p-3"
+      className="w-70 h-[30vh] relative rounded    p-3"
       onMouseEnter={() => {
         setHovered(true);
         setTimeout(() => setLoading(false), 300); // Simulate loading delay
