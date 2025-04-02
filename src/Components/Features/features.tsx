@@ -18,10 +18,10 @@ interface FeatureCardProps {
   const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
     return (
       <div className="flex flex-col gap-y-2 items-center text-center">
-        <img className="bg-purple-400 bg-opacity-30 p-3 rounded-lg  w-[45px] h-[45px] object-contain" src={icon} alt={title}  />
+        <img className="bg-[#a284da] bg-opacity-30 p-3 rounded-lg  w-[45px] h-[45px] object-contain" src={icon} alt={title}  />
         <h3 className="text-xl text-balance font-semibold text-white">{title}</h3>
         <p className="text-gray-400 text-balance text-sm mx-auto max-w-md text-center">{description}</p>
-        <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
+        <a href="#" className="text-[#a284da] hover:text-white hover:underline transition-colors ">
           Learn more &gt;
         </a>
       </div>
@@ -96,7 +96,7 @@ interface FeatureCardProps {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center border-t border-l border-[#292c32]">
             {features.map((feature, index) => (
-            <div key={index} className="flex flex-col  border-r border-b border-[#292c32] px-4 py-8 hover:bg-gray-950 items-center">
+            <div key={index} className="flex flex-col  border-r border-b border-[#292c32] px-4 py-8 hover:bg-[#17181bb3] items-center">
                 <FeatureCard icon={feature.icon} title={feature.title} description={feature.description} />
             </div>
             ))}
