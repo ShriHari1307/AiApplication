@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { getSingletonHighlighter } from "shiki";
 
 interface CodeEditorProps {
@@ -7,6 +7,8 @@ interface CodeEditorProps {
 
 export default function CodeEditor({ code }: CodeEditorProps) {
   const [highlightedCode, setHighlightedCode] = useState("<pre class='text-sm font-mono text-white'>Loading...</pre>");
+
+  const codeContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let isMounted = true;
@@ -23,11 +25,16 @@ export default function CodeEditor({ code }: CodeEditorProps) {
       }
     }
     highlight();
+
+    if (codeContainerRef.current) {
+      codeContainerRef.current.scrollTop = 0;
+    }
+
     return () => { isMounted = false; };
   }, [code]);
 
   return (
-    <div className="p-4 font-mono text-sm md:max-h-[45vh] overflow-scroll scroll-container">
+    <div className="p-4 font-mono text-sm md:max-h-[45vh] overflow-scroll scroll-container" ref={codeContainerRef}>
       <div dangerouslySetInnerHTML={{ __html: highlightedCode }} />
     </div>
   );
