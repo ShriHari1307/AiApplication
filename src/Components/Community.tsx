@@ -19,7 +19,7 @@ export default function Community() {
           />
           <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#0d0e12] via-transparent to-transparent pointer-events-none" />
         </div>
-        <h2 className="relative z-10 text-sm text-muted-foreground font-semibold tracking-tight uppercase">
+        <h2 className="relative text-sm text-muted-foreground font-semibold tracking-tight uppercase">
           Community
         </h2>
       </div>

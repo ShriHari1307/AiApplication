@@ -103,7 +103,7 @@ const TestimonialsLayout = () => {
                         {/* Fade effect at the bottom */}
                         <div className="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-t from-[#0d0e12] via-transparent to-transparent pointer-events-none" />
                     </div>
-                    <h2 className="relative z-10 text-sm text-white text-muted-foreground font-semibold 
+                    <h2 className="relative text-sm text-white text-muted-foreground font-semibold 
                     tracking-tight uppercase">
                         TESTIMONIALS
                     </h2>

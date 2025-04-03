@@ -50,7 +50,7 @@ function Blog() {
         </div>
 
         {/* Blog Title (Now above flickering grid) */}
-        <h2 className="relative z-10 text-sm text-muted-foreground font-semibold tracking-tight uppercase">
+        <h2 className="relative text-sm text-muted-foreground font-semibold tracking-tight uppercase">
           Blog
         </h2>
       </div>

@@ -65,7 +65,7 @@ interface FeatureCardProps {
 
 
   return (
-    <section id="features" className=" flex justify-center mx-auto container">
+    <section id="features" className=" flex justify-center mx-auto container ">
     <div className="text-white lg:px-2 max-w-screen-lg mx-auto">
         <div className="border-x  border-[#292c32]">
           {/* Full-width Flickering Grid with Centered Heading */}
@@ -85,10 +85,10 @@ interface FeatureCardProps {
                 {/* Heading */}
                       <div className="container mx-auto sm:px-8 md:px-16 lg:px-24 py-12 border-[#292c32]  text-center overflow-hidden">
                         
-                        <h2 className="font-semibold relative z-10">
+                        <h2 className="relative text-sm text-muted-foreground font-semibold tracking-tight uppercase">
                           FEATURES
                         </h2>
-                      <div className="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-t from-[#0d0e12] via-transparent to-transparent pointer-events-none" />
 
                     </div>
             </div>
