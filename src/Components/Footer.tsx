@@ -71,7 +71,8 @@ const Footer = () => {
   <div className="absolute bottom-0 left-0 w-full h-30  bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none"></div>
 
   {/* Gradient Text with Ripple Effect */}
-  <h1 className="font-sans font-semibold text-[10vw] md:text-[16vw] lg:text-[12vw] tracking-tight text-transparent bg-gradient-to-b from-gray-800 to-gray-900 bg-clip-text shadow-md">
+  <h1 className="font-sans font-semibold text-[10vw] md:text-[16vw] lg:text-[12vw] tracking-tight bg-gradient-to-t from-slate-800 to-gray-600
+               text-transparent bg-clip-text filter brightness-150 shadow-md">
     AGENT SDK
   </h1>
 </div>
