@@ -11,7 +11,7 @@ export function OrbitingCirclesDemo() {
         <Icons.googleDrive />
         <Icons.whatsapp />
       </OrbitingCircles>
-      <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
+      <OrbitingCircles iconSize={30} radius={75} reverse speed={2}>
         <Icons.whatsapp />
         <Icons.notion />
         <Icons.openai />
