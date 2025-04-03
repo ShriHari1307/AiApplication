@@ -72,7 +72,7 @@ export const PricingCard: React.FC<PricingPlan> = ({ plan, yearly }) => {
                     </p> 
                 </div> 
             </div> 
-            <div className="border-b w-full"></div> 
+            <div className="border-t border-gray-700 w-full"></div> 
             <ul className="space-y-2 h-full pl-4 pt-2"> 
                 {plan.features.map((feature, idx) => ( 
                     <PricingFeature key={idx} title={feature} /> 

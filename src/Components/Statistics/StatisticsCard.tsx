@@ -21,8 +21,7 @@ const StatisticsCard: React.FC<statisticsProps> = (props) => {
                 <h1 className="absolute inset-0 from-[#0d0e12] to-transparent-t text-[5rem] font-bold opacity-10 blur-md">{props.population}</h1>
                 <h1 className="relative text-[5rem] font-bold tracking-tight 
                bg-gradient-to-t from-slate-800 to-gray-600
-               text-transparent bg-clip-text drop-shadow-[0_0_30px_rgba(255,255,225,0.6)]
-               filter brightness-150">
+               text-transparent bg-clip-text filter brightness-150">
                     {props.population}
                 </h1>
                 <div className=" flex justify-center items-center mt-2">
