@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="flex flex-col mx-auto justify-center lg:px-6 gap-y-5 rounded-lg text-white pt-5 container">
       <div>
         {/* Logo & Social Icons */}
-      <div className="flex justify-between sm:px-7 md:px-5 lg:px-2 xl:px-29 px-4">
+      <div className="flex justify-between sm:px-7 md:px-5 lg:px-2 xl:px-29 2xl:px-65 px-4">
         <div className="flex items-center gap-x-2">
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
       
       {/* Navigation Links */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between px-4 sm:px-7 md:px-5 lg:px-2 xl:px-29">
+      <div className="flex flex-col md:flex-row md:items-center justify-between px-4 sm:px-7 md:px-5 lg:px-2 xl:px-29 2xl:px-65">
         <ul className="flex flex-col text-[#ABAFBA] py-3 md:flex-row gap-x-5 text-muted-foreground">
           <li className="text hover:text-[#F8FAFC] font-medium hover:text-foreground hover:underline">
             <a href="#">Pricing</a>
@@ -71,7 +71,7 @@ const Footer = () => {
   <div className="absolute bottom-0 left-0 w-full h-30  bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none"></div>
 
   {/* Gradient Text with Ripple Effect */}
-  <h1 className="font-sans font-semibold text-[10vw] md:text-[16vw] lg:text-[12vw] tracking-tight bg-gradient-to-t from-slate-800 to-gray-600
+  <h1 className="font-sans font-semibold text-[10vw] md:text-[16vw] lg:text-[12vw] xl:text-[9vw] tracking-tight bg-gradient-to-t from-slate-800 to-gray-600
                text-transparent bg-clip-text filter brightness-150 shadow-md">
     AGENT SDK
   </h1>
