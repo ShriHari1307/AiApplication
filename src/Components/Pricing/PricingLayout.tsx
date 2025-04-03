@@ -54,10 +54,9 @@ const PricingLayout = () => {
 
 
     return (
-        <div className='flex justify-center mx-auto container px-4'>
+        <div className='flex justify-center mx-auto'>
             {/* Flickering Grid Background */}
-
-            <div className='px-6 md:px-6 sm:px-6 w-full max-w-screen-lg'>
+            <div className='lg:px-2 w-full max-w-screen-lg'>
                 <div className="text-center relative mx-auto border border-[#292c32] overflow-hidden p-4 py-8 md:p-12">
 
                     {/* Flickering Grid Background */}
@@ -75,12 +74,12 @@ const PricingLayout = () => {
                     </div>
 
                     {/* Blog Title (Now above flickering grid) */}
-                    <h2 className="relative z-10 text-sm text-white text-muted-foreground font-semibold tracking-tight uppercase">
+                    <h2 className="relative text-sm text-white text-muted-foreground font-semibold tracking-tight uppercase">
                         PRICING
                     </h2>
                 </div>
-                <div className="flex flex-col items-center justify-center text-center text-white pt-6 border border-gray-600">
-                    <h1 className="text-2xl lg:text-5xl md:text-5xl sm:text-4xl font-bold mb-4">Simple pricing for everyone.</h1>
+                <div className="flex flex-col items-center justify-center text-center text-white pt-6 border border-t-0 border-[#292c32]">
+                    <h1 className=" text-3xl lg:text-5xl md:text-5xl font-bold mb-4 px-4">Simple pricing for everyone.</h1>
                     <p className="text-sm lg:text-lg md:w-xl md:text-md sm:text-lg text-gray-400">
                         Choose an <span className="font-semibold text-white">affordable plan</span> that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.
                     </p>

@@ -1,12 +1,12 @@
 import './App.css'
 import MainContent from './MainContent'
-// import HeaderComponent from './Components/Header'
+import HeaderComponent from './Components/Header'
 
 
 function App() {
 
   return (
-    <>
+    <div className=''>
     {/* Header */}
     <HeaderComponent/>
 
@@ -15,7 +15,7 @@ function App() {
     
     
     {/* Footer */}
-    </>
+    </div>
   )
 }
 

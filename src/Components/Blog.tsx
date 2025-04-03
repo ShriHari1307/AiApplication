@@ -10,7 +10,7 @@ const blogPosts = [
     description: "Introducing Acme.ai, a cutting-edge AI solution for modern businesses."
   },
   {
-    title: "Why Dev AI?",
+    title: "Why Dev AI I?",
     date: "November 1, 2024",
     timeAgo: "2w ago",
     image: "/Blog.webp",
@@ -29,11 +29,11 @@ const blogPosts = [
 
 function Blog() {
   return (
-    <section id="blog" className="relative flex justify-center mx-auto container px-4 pb-4 text-white">
+    <section id="blog" className="relative flex justify-center mx-auto container text-white">
       
-      <div className="max-w-screen-lg pl-6 pr-6 ">
+      <div className="max-w-screen-lg lg:px-2">
         {/* Title Section */}
-      <div className="text-center relative mx-auto border border-[#292c32] overflow-hidden p-4 py-8 md:p-12">
+      <div className="text-center relative mx-auto border  border-[#292c32]  overflow-hidden p-4 py-8 md:p-12">
         
         {/* Flickering Grid Background */}
         <div className="absolute inset-0 z-0">
@@ -50,13 +50,13 @@ function Blog() {
         </div>
 
         {/* Blog Title (Now above flickering grid) */}
-        <h2 className="relative z-10 text-sm text-muted-foreground font-semibold tracking-tight uppercase">
+        <h2 className="relative text-sm text-muted-foreground font-semibold tracking-tight uppercase">
           Blog
         </h2>
       </div>
 
       {/* Blog Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3  border border-[#292c32] border-b">
+      <div className="grid grid-cols-1 lg:grid-cols-3  border border-[#292c32] border-b-0">
         {blogPosts.map((post, index) => (
           <a
           key={index}
