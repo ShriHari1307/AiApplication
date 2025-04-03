@@ -42,14 +42,14 @@ export const PricingCard: React.FC<PricingPlan> = ({ plan, yearly }) => {
  
     return ( 
         <div className={`shadow-xl flex flex-col justify-between mt-2 md:mt-2 sm:mt-2  ${
-            plan.popular ? "border border-gray-700 bg-gray-900" : "border border-gray-700"
+            plan.popular ? "border border-gray-700 bg-[#15141d]" : "border border-gray-700"
         }`}> 
             <div className="p-4 md:p-4"> 
                 <div className="flex justify-between w-full items-center mb-2"> 
                     <h3 className="text-sm md:text-sm font-semibold mb-4">{plan.name}</h3> 
                     {plan.popular && ( 
                         <div className="flex justify-end items-end"> 
-                            <h1 className="text-xs bg-purple-600 text-black rounded-xl px-2 py-1"> 
+                            <h1 className="text-xs bg-[#b392f0] text-black rounded-xl px-2 py-1"> 
                                 Most Popular 
                             </h1> 
                         </div> 
