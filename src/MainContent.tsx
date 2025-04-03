@@ -3,6 +3,8 @@ import HeroSection from "./Components/HeroSection";
 import Organisation from "./Components/Organisation";
 import Features from "./Components/Features/features";
 import Blog from "./Components/Blog";
+import Community from "./Components/Community";
+//import HeaderComponent from './Components/Header'
 import CTASection from "./Components/CTA";
 import Footer from "./Components/Footer";
 import PricingLayout from './Components/Pricing/PricingLayout'
@@ -12,7 +14,7 @@ import { UseCase } from "./Components/UseCase/UseCase";
 
 export default function MainContent() {
   return (
-  <>
+  <div className="px-6">
     <HeroSection />
     <Organisation />
     <Examples/>
@@ -21,9 +23,10 @@ export default function MainContent() {
     <StatisticsLayout/>
     <TestimonialsLayout/>
     <PricingLayout/>
+    <Community/>
     <Blog/>
     <CTASection />
     <Footer />
-  </>
+  </div>
   )
 }

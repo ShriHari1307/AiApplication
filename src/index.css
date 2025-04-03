@@ -30,7 +30,31 @@
     border-radius: 10px;
   }
 
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db; /* Muted gray thumb */
+    border-radius: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af; /* Darker gray on hover */
+  }
 }
+
+@keyframes ripple {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.animate-ripple {
+  animation: ripple var(--duration, 2s) ease calc(var(--i, 0) * 0.2s) infinite;
+  background-color: rgba(255, 255, 255, 0.2); /* White ripple effect */
+  border-color: rgba(255, 255, 255, 0.4); /* White border */
+}
+
 
 @keyframes rotateImage {
   0% {

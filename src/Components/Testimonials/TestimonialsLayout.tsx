@@ -88,8 +88,8 @@ const TestimonialsLayout = () => {
     ]
 
     return (
-        <div className='flex justify-center mx-auto container px-4 text-white'>
-            <div className='px-6 md:px-6 sm:px-6 w-full max-w-screen-lg'>
+        <div className='flex justify-center mx-auto container text-white'>
+            <div className='lg:px-2 w-full max-w-screen-lg'>
                 <div className="text-center relative mx-auto border border-gray-700 overflow-hidden p-4 py-8 md:p-12">
                     <div className="absolute inset-0 z-0">
                         <FlickeringGrid
@@ -103,29 +103,39 @@ const TestimonialsLayout = () => {
                         {/* Fade effect at the bottom */}
                         <div className="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-t from-[#0d0e12] via-transparent to-transparent pointer-events-none" />
                     </div>
-                    <h2 className="relative z-10 text-sm text-white text-muted-foreground font-semibold 
+                    <h2 className="relative text-sm text-white text-muted-foreground font-semibold 
                     tracking-tight uppercase">
                         TESTIMONIALS
                     </h2>
                 </div>
+                {/* <div className="relative">
+                    <div className="columns-1 sm:columns-2 lg:columns-3 gap-0 pb-5 bg-grid-1 sm:bg-grid-2 
+                    lg:bg-grid-3 border-x-1 border-gray-700">
+                        {data.slice(0, showAll ? data.length : initialCardCount).map((plan) => (
+                            <Card key={plan.name} props={plan} />
+                        ))}
+                    </div>
+                </div>
+                <div className={`
+                    ${showAll ? "absolute lg:-bottom-550 lg:w-250 md:-bottom-50 h-80 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none" :
+                        "absolute -bottom-90 lg:-bottom-470 lg:w-250 md:-bottom-50  h-80 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none"}
+                    `} /> */}
+
                 <div className="relative">
                     <div className="columns-1 sm:columns-2 lg:columns-3 gap-0 pb-5 bg-grid-1 sm:bg-grid-2 
-                    lg:bg-grid-3 border-x border-gray-600">
+                        lg:bg-grid-3 border-x-1 border-gray-700">
                         {data.slice(0, showAll ? data.length : initialCardCount).map((plan) => (
                             <Card key={plan.name} props={plan} />
                         ))}
                     </div>
 
-                    {/* Fade effect that covers bottom cards when not showing all */}
-                    {/* {!showAll && data.length > initialCardCount && (
-                        <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t 
-                        from-[#0d0e12]  to-transparent pointer-events-none" />
-                    )} */}
+                    {/* Always stays at the bottom regardless of card count */}
+                    {!showAll ? (
+                        <div className="absolute bottom-0 left-2 right-2 h-64 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none z-10 rounded-xl" />
+                    ) : (
+                        <div className="absolute bottom-0 left-2 right-2 h-64 bg-gradient-to-t from-[#0d0e12] to-transparent pointer-events-none z-10 rounded-xl" />  
+                    )}
                 </div>
-                {/* <div className={`
-                    ${showAll ? "absolute lg:-bottom-130 lg:w-245 md:-bottom-50 h-64 bg-gradient-to-t from-[white] to-transparent pointer-events-none" :
-                        "absolute -bottom-90 lg:-bottom-40 lg:w-245 md:-bottom-50  h-64 bg-gradient-to-t from-[white] to-transparent pointer-events-none"}
-                    `} /> */}
                 <div className="flex justify-center cursor-pointer items-center h-10 pb-10 border-x border-gray-600">
                     <button
                         type="button"

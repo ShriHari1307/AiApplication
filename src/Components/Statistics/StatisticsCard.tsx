@@ -1,13 +1,13 @@
 interface statisticsProps {
     population: string
     platform: string
-    logo: string
+    logo: React.ReactNode
 }
 
 
 const StatisticsCard: React.FC<statisticsProps> = (props) => {
     return (
-        <div className=" group flex justify-center p-6 border border-gray-700 relative bg-black
+        <div className=" group flex justify-center p-6 border border-gray-700 relative
         transition-all duration-300 ease-in-out hover:border-gray-500">
 
             <div className="absolute top-4 right-4 opacity-0 translate-x-2 -translate-y-2 transition-all duration-300 ease-in-out 
@@ -20,13 +20,13 @@ const StatisticsCard: React.FC<statisticsProps> = (props) => {
             <div className=" flex justify-center flex-col text-center relative">
                 <h1 className="absolute inset-0 from-[#0d0e12] to-transparent-t text-[5rem] font-bold opacity-10 blur-md">{props.population}</h1>
                 <h1 className="relative text-[5rem] font-bold tracking-tight 
-               bg-gradient-to-t from-slate-800 to-gray-400
+               bg-gradient-to-t from-slate-800 to-gray-600
                text-transparent bg-clip-text drop-shadow-[0_0_30px_rgba(255,255,225,0.6)]
                filter brightness-150">
                     {props.population}
                 </h1>
                 <div className=" flex justify-center items-center mt-2">
-                    {props.logo && <img src={props.logo} alt="logo" className="w-6 h-6 text-gray-400" />}
+                    {props.logo && <span className="w-6 h-6 text-gray-400">{props.logo}</span>}
                     <h1 className=" px-2 text-gray-400 text-sm">{props.platform}</h1>
                 </div>
             </div>

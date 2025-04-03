@@ -2,8 +2,8 @@ import { FlickeringGrid } from "./magicui/flickering-grid"; // Import same effec
 
 export default function CTASection() {
   return (
-    <section id="cta" className="relative flex justify-center mx-auto container px-4 text-white">
-      <div className="max-w-screen-lg w-full pl-6 pr-6">
+    <section id="cta" className="relative flex justify-center mx-auto container text-white">
+      <div className="max-w-screen-lg lg:px-2 w-full">
         
         {/* CTA Box */}
         <div className="relative text-center border border-[#292c32] overflow-hidden p-4 py-8 md:p-12 mx-auto">
