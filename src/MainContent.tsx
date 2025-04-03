@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import PricingLayout from './Components/Pricing/PricingLayout'
 import StatisticsLayout from "./Components/Statistics/StatisticsLayout";
 import TestimonialsLayout from "./Components/Testimonials/TestimonialsLayout";
+import { UseCase } from "./Components/UseCase/UseCase";
 
 export default function MainContent() {
   return (
@@ -15,6 +16,7 @@ export default function MainContent() {
     <HeroSection />
     <Organisation />
     <Examples/>
+    <UseCase/>
     <Features/>
     <StatisticsLayout/>
     <TestimonialsLayout/>

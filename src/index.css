@@ -29,6 +29,7 @@
     background: #f3f4f6; /* Light gray background */
     border-radius: 10px;
   }
+
 }
 
 @keyframes rotateImage {
@@ -42,4 +43,20 @@
 
 .rotating-image {
   animation: rotateImage 5s linear infinite;
+}
+@layer utilities {
+  /* The animation class itself */
+  .animate-orbit {
+    animation: orbit calc(var(--duration, 10) * 1s) linear infinite;
+  }
+
+  /* The keyframes for the orbit animation */
+  @keyframes orbit {
+    0% {
+      transform: rotate(calc(var(--angle, 0) * 1deg)) translateY(calc(var(--radius, 100) * 1px)) rotate(calc(var(--angle, 0) * -1deg));
+    }
+    100% {
+      transform: rotate(calc(var(--angle, 0) * 1deg + 360deg)) translateY(calc(var(--radius, 100) * 1px)) rotate(calc((var(--angle, 0) * -1deg) - 360deg));
+    }
+  }
 }
